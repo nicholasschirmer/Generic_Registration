@@ -1,0 +1,32 @@
+﻿@model GenericRegistration.Models.Register
+
+@{
+    ViewBag.Title = "Register";
+    @Scripts.Render("~/Scripts/script.js");
+}
+
+<h1>@ViewBag.Title</h1>
+<link href="~/Content/style.css" rel="stylesheet" />
+<form id="form" method="post">
+    <br>
+    <div class="row">
+        <label>Fisrt Name :</label> <input id="fName" class="form-inline form-control" type="text" name="firstName" value="" placeholder="First Name" required />
+        <label>Last Name :</label> <input id="lName" class="form-inline form-control" type="text" name="lastName" value="" placeholder="Last Name" />
+    </div>
+    <div class="row">
+        <label>Email :</label> <input id="email" class="form-inline form-control" type="email" name="email" value="" placeholder="Email" required />
+    </div>
+    <div class="row">
+        <label>Password :</label> <input class="form-inline form-control" type="password" name="password" value="" placeholder="Password" id="pass" required />
+        <label>Confirm Password :</label> <input class="form-inline form-control" type="password" name="passTemp" value="" placeholder="Confirm Password" id="tempPass" required />
+    </div>
+    <br />
+    <input class="btn btn-primary row" type="button" name="btnSubmit" value="Submit" onclick="checkEmpty()" />
+</form>
+<div id="toast">
+    <button type="button" class="close" onclick="hideMsg()" aria-label="Close" style="padding: 2px;"><span aria-hidden="false">&times;</span></button>
+    <div id="msgHead"></div>
+    <div id="msgBlock"></div>
+</div>
+<div id="side"></div>
+

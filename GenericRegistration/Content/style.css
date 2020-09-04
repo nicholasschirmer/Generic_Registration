@@ -1,0 +1,52 @@
+﻿body {
+    background: url("background.jpg") fixed no-repeat right;
+    background-size: 50vw, 100vh;
+}
+
+input {
+    margin-bottom: 1vh
+}
+
+#toast {
+    position: absolute;
+    float: right;
+    right: 50vw;
+    bottom: 10vh; !important;
+    margin: 12px;
+    visibility: hidden;
+    padding: 0;
+    max-width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: #FAFAFA;
+}
+
+#msgHead {
+    border-bottom: 1px solid grey;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#msgBlock {
+    text-align: center;
+    margin: 2px;
+}
+
+footer{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    height: 7vh;
+    width: 100vw;
+    background: #ffffff;
+    border: solid 1px black;
+}
+
+#footNotes{
+    position: relative;
+    float: left;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    font-style: italic;
+}
